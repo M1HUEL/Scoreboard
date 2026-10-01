@@ -12,10 +12,15 @@ repositories {
     name = 'papermc'
     url = 'https://repo.papermc.io/repository/maven-public/'
   }
+  maven {
+    name = 'placeholderapi'
+    url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/'
+  }
 }
 
 dependencies {
   compileOnly libs.paper.api
+  compileOnly 'me.clip:placeholderapi:2.12.3'
 
   testImplementation libs.junit.jupiter
   testRuntimeOnly 'org.junit.platform:junit-platform-launcher'

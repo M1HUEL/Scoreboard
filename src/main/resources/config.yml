@@ -1,0 +1,25 @@
+# Whether the sidebar scoreboard is shown to players.
+enabled: true
+
+# How often (in ticks) the scoreboard is refreshed. 20 ticks = 1 second.
+update-interval-ticks: 20
+
+# Title displayed at the top of the sidebar.
+title: "<gradient:#00c6ff:#0072ff>My Server</gradient>"
+
+# Sidebar lines, from top to bottom (maximum 15). MiniMessage is supported.
+#
+# Placeholders provided by this plugin:
+#   %player_name%   %uuid%      %world%
+#   %kills%         %deaths%    %ping%
+#   %online%        %health%    %food%
+#
+# If PlaceholderAPI is installed, its placeholders are resolved first, so
+# %player_name% can also come from /papi ecloud download Player and so on.
+lines:
+  - "<dark_gray>-----------------"
+  - "<gray>Player: <white>%player_name%"
+  - "<gray>Online: <white>%online%"
+  - "<gray>Ping: <white>%ping%ms"
+  - "<gray>K/D: <white>%kills%<gray>/<white>%deaths%"
+  - "<dark_gray>-----------------"

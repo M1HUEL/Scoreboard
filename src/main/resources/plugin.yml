@@ -4,3 +4,15 @@ description: '${description}'
 main: com.itson.Scoreboard.ScoreboardPlugin
 api-version: '${apiVersion}'
 author: M1HUEL
+softdepend:
+  - PlaceholderAPI
+commands:
+  scoreboard:
+    description: Scoreboard administration commands.
+    permission: scoreboard.reload
+    aliases:
+      - sb
+permissions:
+  scoreboard.reload:
+    description: Allows reloading the Scoreboard configuration.
+    default: op
